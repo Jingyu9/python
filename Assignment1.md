@@ -27,3 +27,17 @@ The basic outline of this problem is to read the file, look for integers using t
 import re
 print sum( [ int(s) for s in re.findall('[0-9]+',open('regex_sum_363363.txt').read()) ] )
 ```
+
+```
+import re # import regular expressions
+chuck_text = open("regex_sum_363363.txt")
+numbers = []
+Total = 0
+for line in chuck_text:
+    nmbrs = re.findall('[0-9]+', line)
+    numbers = numbers + nmbrs 
+for n in numbers:
+    Total = Total + float(n)
+print "Total = ", Total 
+
+```
