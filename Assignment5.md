@@ -19,6 +19,7 @@ To make the code a little simpler, you can use an XPath selector string to look 
 
 counts = tree.findall('.//count')
 Take a look at the Python ElementTree documentation and look for the supported XPath syntax for details. You could also work from the top of the XML down to the comments node and then loop through the child nodes of the comments node.
+
 '''
 import urllib
 import xml.etree.ElementTree as ET
