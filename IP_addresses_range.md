@@ -4,6 +4,12 @@ Here’s a short Python snippet that generates a list of IP addresses based on I
 def ipRange(start_ip, end_ip):
    start = list(map(int, start_ip.split(".")))
    end = list(map(int, end_ip.split(".")))
+   
+   for i in range(4):
+       if start[i] > end[i]:
+           start, end = end, start
+       break
+       
    temp = start
    ip_range = []
    
