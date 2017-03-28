@@ -6,6 +6,7 @@ def ipRange(start_ip, end_ip):
        if start[i] > end[i]:
             start, end = end, start
        break
+      
    temp = start
    ip_range = []
    
