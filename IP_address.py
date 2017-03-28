@@ -4,8 +4,8 @@ def ipRange(start_ip, end_ip):
    
    for i in range(4):
        if start[i] > end[i]:
-        start, end = end, start
-        break
+            start, end = end, start
+       break
    temp = start
    ip_range = []
    
